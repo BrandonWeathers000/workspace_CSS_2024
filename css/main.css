@@ -1,0 +1,85 @@
+/* global variable */
+:root{
+	--body-color: hsl(359, 39%, 35%);
+	--page-color: #3399FF;
+	--sidebar-color:  #e1f792;
+
+	--font-color: #a2a2ff;
+
+	/* Layout Variables */
+	--page-top-position: 85%;
+	--page-width: 30%;
+	--bottom-bar-height: 10vh;
+	--bottom-bar-color: hsl(358, 67%, 62%);
+}
+
+body{
+	color: white;
+	/* When using a already created variable, I must use the "var()" beforehand*/
+	background-color: var(--body-color);
+
+	/* This does the same thing */
+	/* background-color: hsl(359, 39%, 35%); */
+}
+
+#zen-intro{
+	background-color: var(--page-color);
+}
+
+
+#zen-supporting{
+	background-color: var(--page-color);
+}
+
+.sidebar{
+	background-color: var(--sidebar-color);
+}
+
+h1{
+	color: var(--font-color);
+}
+
+div.explanation, div.participation, div.benefits, div.requirements {
+	position: fixed;
+	top: var(--page-top-position);
+	width: var(--page-width);
+	background-image: url(../img/newspaper3.jpg);
+}
+
+div.explanation {
+	left: 0%;
+}
+
+div.participation{
+	left: 25%;
+}
+
+div.benefits{
+	left: 50%;
+}
+
+div.requirements{
+	left: 75%;
+}
+
+aside.sidebar{
+	position: absolute;
+	top: 20%;
+	right: 0px;
+}
+
+section.intro{
+	position: fixed;
+	top: 10%;
+	right: 0px;
+}
+
+div.extra2{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: var(--bottom-bar-height);
+	background-color: var(--bottom-bar-color);
+}
