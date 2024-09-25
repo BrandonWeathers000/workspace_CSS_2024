@@ -71,7 +71,13 @@ aside.sidebar{
 section.intro{
 	position: fixed;
 	top: 10%;
-	right: 0px;
+	bottom: 5%;
+	left: 30%;
+	height: 80%;
+	background-color: var(--bottom-bar-color);
+	padding: 2%;
+	border: 2px dashed #000000;
+	margin-left: 10px;
 }
 
 div.extra2{
@@ -82,4 +88,58 @@ div.extra2{
 	width: 100%;
 	height: var(--bottom-bar-height);
 	background-color: var(--bottom-bar-color);
+}
+
+div.extra1{
+	position: fixed;
+	bottom: 5%;
+	left: 20%;
+	right: 30%;
+	width: 80%;
+	height: var(--bottom-bar-height);
+	background-image: url(../img/newspaper2.jpg);
+	z-index: -1;
+}
+
+@font-face{
+	font-family: 'myfont';
+	src: url(../font/chunkfive.eot);
+}
+
+header h1{
+	font-family: 'myfont', sans-serif;
+	font-weight: 100;
+	font-size: 1.25em;
+}
+
+header h2{
+	font-family: "Baskervville SC", system-ui;
+	font-weight: 400;
+	font-style: normal;
+}
+
+a{
+	text-decoration: none;
+}
+
+#design-selection{
+	visibility: hidden; 
+	/* display: none; */
+}
+
+#design-archives{
+	visibility: hidden;
+	/* display: none; */
+}
+
+#zen-resources{
+	visibility: hidden;
+	/* display: none; */
+}
+
+div.explanation h3, div.requirements h3, div.benefits h3, div.participation h3{
+	margin-top: -5%;
+	width: 12vw;
+	color: black;
+	background-color: bisque;
 }
