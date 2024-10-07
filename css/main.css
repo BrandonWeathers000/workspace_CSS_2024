@@ -14,7 +14,7 @@
 }
 
 body{
-	color: white;
+	color: black;
 	/* When using a already created variable, I must use the "var()" beforehand*/
 	background-color: var(--body-color);
 
@@ -123,7 +123,8 @@ a{
 }
 
 #design-selection{
-	visibility: hidden; 
+	color: black;
+	/* visibility: hidden; */
 	/* display: none; */
 }
 
@@ -142,4 +143,33 @@ div.explanation h3, div.requirements h3, div.benefits h3, div.participation h3{
 	width: 12vw;
 	color: black;
 	background-color: bisque;
+}
+
+/* 04: selector, transform, and transition practive */
+a:hover{
+	font-size: 1.5em;
+}
+
+div.explanation:hover, div.participation:hover, div.benefits:hover, div.requirements:hover{
+	top: 15vh;
+	height: 90vh;	
+}
+
+p::first-letter{
+	font-size: 1.5em;
+	font-style: italic;
+}
+
+p:nth-child(2n+1){
+	color: white;
+	background-color: black;
+}
+
+h3{
+	text-shadow: 2em 0.75em 0.1em black;
+}
+
+div.explanation h3, div.requirements h3, div.benefits h3, div.participation h3 {
+	border-top-left-radius: 20px;
+	padding-left: 5px;
 }
